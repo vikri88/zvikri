@@ -1,0 +1,58 @@
+.lokasi{
+	width: 18%;
+	height: 220px;
+	padding: 1.5%;
+	padding-bottom: 2.5%;
+	float: left;
+	background-color: white;
+	margin-left: 25px;
+	box-shadow: 2px 2px 2px solid black;
+	box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+	margin-top: 30px;
+}
+.lokasi img{
+	width: 100px;
+}
+.lokasi h5{
+	font-size: 25px;
+	margin: 15px;
+	margin-bottom: 7px;
+	color: #78909C;
+	font-family: paranoid;
+	letter-spacing: 1px;
+}
+.number{
+	float: left;
+	width: 55px;
+	height: 55px;
+	margin-top: 5%;
+	margin-left: 7px;
+	border-radius: 50%;
+	border:4px solid #78909C;
+}
+.number p{
+	font-family: paranoid;
+	font-size: 22px;
+	color: #78909C;
+	position: inherit;
+	margin-top: 17px;
+	text-align: center;
+}
+.button{
+	width: 60%;
+	height: 80px;
+	float: right;
+	background-color: transparent;
+}
+.button button{
+	width: 80%;
+	height: 40%;
+	border: 3px solid #78909C;
+	float: left;
+	margin-left: 15px;
+	margin-top: 0;
+	background-color: white;
+	color: grey;
+	font-family: paranoid;
+	letter-spacing: 1px;
+}

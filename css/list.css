@@ -1,0 +1,73 @@
+.list{
+	width: 25%;
+	height: 350px;
+	padding: 0%;
+	background-color: white;
+	margin: 2%;
+	margin-left: 5%;
+	display: inline-block;
+	border: 3px solid #bababa;
+	box-shadow: 0px 3px 5px grey;
+}
+.profile_admin{
+	width: 100px;
+	height: 100px;
+	border: 4px solid #bababa;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+}
+.profile_admin img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.jelly{
+	width: 100%;
+	height: 21%;
+	padding-top: 80px;
+	background-image: url("../img/jelly.jpg");
+	background-size: cover;
+	background-position: center;
+	border-bottom: 3px solid #bababa;
+}
+.list h4, .list h3{
+	margin-top: 15px;
+	text-align: center;
+	font-family: paranoid;
+	font-size: 22px;
+	color: grey;
+	opacity: 0.9;	
+}
+.list h3{
+	margin-top: -20px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: #bababa;
+	margin-bottom: 25px;
+}
+.list button{
+	width: 44%;
+	padding: 3.5%;
+	background-color: transparent;
+	border:2px solid #bababa;
+	color: grey;
+	font-family: paranoid;
+	letter-spacing: 1px; 
+}
+.list button:hover{
+	background-color: #bababa;
+	border:2px solid grey;
+	color: white;
+}
+.a h1{
+	margin-bottom: 5px;
+	color: grey;
+	font-family: paranoid;
+	letter-spacing: 2px;
+	text-align: center;
+}
+.a hr{
+	width:35%;
+	border: 2px solid #bababa;
+}

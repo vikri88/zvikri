@@ -1,0 +1,448 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+}
+@font-face{
+	font-family: "paranoid";
+	src:url('../font/code bold.otf');
+}
+@font-face{
+	font-family: "paranoid2";
+	src:url('../font/code light.otf');
+}
+.fck{
+	width: 100%;
+	height: 7%;
+	background-color: rgba(49, 54, 58, 0.73);
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.fck input{
+	width: 110px;
+	height: 35px;
+	font-family: century gothic;
+	color: #4682b4;
+	border: 20px;
+	background-color: white;
+	float: right;
+	margin-right: 50px;
+}
+.fck h1{
+	float: left;
+	position: absolute;
+	font-family: paranoid;
+	margin-top: 10px;
+	color: lavender;
+	margin-left: 20px;
+	letter-spacing: 7px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+.dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: century gothic;
+}
+
+.fck a:hover {background-color: #f1f1f1}
+
+.show {
+	display:block;
+}
+
+.a{
+	width: 77%;
+	padding-top: 10px;
+	padding-left: 3%;
+	padding-right: 2.5%;
+	height: 720px;
+	float: right;
+	background-color: #eee; 
+}
+#tai button{
+	padding: 5px;
+	margin-left: 10%;
+}
+.b{
+	float: left;
+	background-color: white;
+	width: 17.5%; 
+}
+.c{
+	width: 100%;
+	background-color: rgb(70, 71, 82);
+	padding: 5%;
+	float: right;
+}
+.listpegawai{
+	float: left;
+	width: 500px;
+	padding-bottom: 20px;
+	background-color: white;
+	margin-left: 10%;
+	border: 10px solid white;
+}
+.lpg{
+	margin-top: -22px;
+	padding-top:1px;
+	padding-left: 5%; 
+	width: 70%;
+	height: 50px;
+	background-color: skyblue;
+}
+.lpg h1{
+	font-family: century gothic;
+	font-size: 18px;
+	color: white;
+}
+.listpegawai table{
+	margin-top: 10px;
+	width: 100%;
+	border: 5px solid black;
+}
+.tambahpegawai{
+	float: right;
+	width: 300px;
+	height: 300px;
+	padding-bottom: 20px;
+	background-color: white;
+	margin-right: 7%;
+	border: 10px solid white;
+}
+.tambahpegawai form{
+	margin-top: 10px;
+	padding: 5%;
+	width: 85%;
+	height: 80%;
+	border: 5px solid black; 
+}
+.tambahpegawai input{
+	width: 90%;
+	padding: 3%;
+	margin-left: 10px;
+}
+.tambahpegawai input[type="submit"]{
+	width: 40%;
+}
+.activity{
+	margin-left: 10%;
+	width: 70%;
+	padding: 2%;
+	background-color: white;
+	float: left;
+}
+.activity table{
+	width: 100%;
+}
+#tai select{
+	width: 70px;
+	height: 30px;
+}
+.notif{
+	width: 80%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 10%;
+	background-color: white;
+}
+.notif2{
+	width: 30%;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 10%;
+	background-color: white;
+}
+.ntf{
+	width: 94%;
+	height: 70px;
+	border: 5px solid black;
+	padding-bottom: 20px;
+	padding-left: 3%;
+	padding-right: 3%;
+	border-radius: 1%;
+}
+.ntf h1{
+	font-size: 17px;
+}
+.ntfrd{
+	width: 93%;
+	height: 70px;
+	border: 5px solid black;
+	padding-bottom: 20px;
+	padding-left: 3%;
+	padding-right: 3%;
+	border-radius: 1%;
+}
+.ntfrd h1{
+	font-size: 17px;
+}
+.b1{
+	width: 100%;
+	height: 150px;
+	padding-top: 20px;
+	background-color: #181818;
+	float: left;
+}
+.b1 h2{
+	margin-left: 40px;
+	font-family: century gothic;
+	font-size: 20px;	
+}
+#barang, #dashboard, #penyimpanan, #kepegawaian, #log, #option, #masukan {
+	padding-left: 15%;
+	padding-top: 15px;
+    width: 85%;
+    height: 40px;
+    background-color: transparent;
+    float: left;
+    transition:0.5s;
+}
+#barang:hover, #masukan:hover, #dashboard:hover, #penyimpanan:hover, #kepegawaian:hover, #log:hover, #option:hover{
+	background-color: lavender;
+	transition:0.5s;
+}
+#barang a, #masukan a, #dashboard a, #penyimpanan a, #kepegawaian a, #log a, #option a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #78909C;
+	font-family: century gothic;
+}
+#panel, #panel1, #panel2, #panel3, #panel4, #panel5{
+	padding-left: 25%;
+	padding-top: 15px;
+    width: 75%;
+    height: 40px;
+    background-color: transparent;
+    float: left;
+    display: none;
+}
+#panel:hover, #panel1:hover, #panel2:hover, #panel3:hover, #panel4:hover, #panel5:hover{
+	background-color: lavender;
+	transition:0.5s;
+}
+#panel a, #panel1 a, #panel2 a, #panel3 a, #panel4 a, #panel5 a{
+	text-decoration: none;
+	font-size: 15px;
+	color: grey;
+	font-family: century gothic;
+}
+#p, #p1, #k, #k1, #l, #l1, #o, #o1, #input_barang, #input_kategori, #input_user_pegawai, #input_karyawan, #input_lokasi{
+	padding-left: 25%;
+	padding-top: 15px;
+    width: 75%;
+    height: 40px;
+    background-color: transparent;
+    float: left;
+    display: none;
+}
+#input_kategori:hover, #input_user_pegawai:hover, #input_karyawan:hover, #input_lokasi:hover, #p:hover, #input_barang:hover, #p1:hover, #k:hover, #k1:hover, #l:hover, #l1:hover, #o:hover, #o1:hover{
+	background-color: lavender;
+	transition:0.5s;
+}
+#p a, #p1 a, #k a, #k1 a, #l a, #l1 a, #o a, #o1 a, #input_barang a, #input_user_pegawai a, #input_karyawan a, #input_lokasi a, #input_kategori a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #181818;
+	font-family: century gothic;
+}
+.a1{
+	width: 19%;
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	height: 95px;
+	float: left;
+	background-color: white;
+}
+#a1{
+	margin-left: 2.5%;
+	float: left;
+}
+.a a{
+	text-decoration: none;
+
+}
+.a1 h1, .a1 p{
+	text-align: right;
+	margin-top: -15px;
+	font-family: century gothic;
+	color: #78909C;
+}
+.a2{
+	width: 35%;
+	height: 440px;
+	background-color: white;
+	float: left;
+	margin-top: 20px;
+}
+.a3{
+	width: 62%;
+	height: 440px;
+	background-color: white;
+	float: left;
+	margin-top: 20px;
+	margin-left: 2.5%;
+}
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+input.search[type=text] {
+	width: 20%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	font-family: century gothic;
+	float: right;
+	color: #ccc;
+	margin-top: 12px; 
+	background-color: white;
+	padding: 5px 15px 5px 15px;
+    -webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	margin-right:1%;
+}
+input.search[type=text]:focus {
+	width: 25%;
+}
+input.search[type=submit]{
+	width: 10%;
+	padding: 5px 15px 5px 15px;
+	font-size: 16px;
+	font-family: century gothic;
+	float: right;
+	margin-top: 12px;
+	margin-right:4%;
+	background-color: #fff;
+	color: #ccc;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+.welcome{
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	margin-bottom: 20px;
+}
+.welcome h1{
+	float: left;
+	position: absolute;
+	font-family: paranoid;
+	margin-top: 25px;
+	color: rgba(49, 54, 58, 0.73);
+	margin-left: 20px;
+	letter-spacing: 7px;
+	opacity: 0.7;
+}
+.welcome h2{
+	float: right;
+	font-size: 40px;
+	font-family: paranoid2;
+	margin-top: 23px;
+	color: rgba(49, 54, 58, 0.73);
+	margin-right: 20px;
+	letter-spacing: 7px;
+	opacity: 0.7;
+}
+.a3 h1, .a2 h1{
+	margin-top: 10px;
+	margin-left: 5%;
+	color: #78909C;
+	font-family: paranoid;
+	letter-spacing: 3px;
+}
+.message{
+	width: 100%;
+	height: 80px;
+	float: left;
+	background-color: ;
+	border-collapse: collapse;
+	opacity: 0.8;
+}
+.message img{
+	border:3px solid #78909C;
+	border-radius: 50%;
+	width: 50px;
+	float: left;
+}
+.pesan{
+	width: 84%;
+	height: 100%;
+	float: right;
+	background-color: #fff;
+}
+.pesan h3{
+	margin-top: 13px;
+	font-family: paranoid;
+	color: grey;
+	letter-spacing: 2px;
+	margin-bottom: -8px;
+	font-size: 25px;
+}
+.pesan p, i{
+	font-family: paranoid;
+	font-size: 14px;
+	color: #78909C;
+	letter-spacing: 1px;
+}
+.pesan i{
+	float: right;
+	margin-right: 10px;
+}
+footer{
+	height:25px;
+	padding-top: 15px;
+    position:absolute;
+    bottom:-30px;
+    width:45.5%;
+	background-color: transparent;
+}
+footer button{
+	font-family: paranoid;
+	color: #78909C;
+	width: 150px;
+	height: 50px;
+	border:2px solid grey;
+	border-radius: 2%;
+	font-size: 17px;
+	letter-spacing: 1px;
+	background-color: transparent;
+	opacity: 0.8;
+}
+footer button:hover{
+	color: white;
+	background-color: #78909C;
+}

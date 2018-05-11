@@ -1,0 +1,61 @@
+<?php
+include '../fpdf/fpdf.php';
+include '../koneksi.php';
+include 'session.php';
+
+$tgl = date('d-M-Y');
+$pdf = new FPDF();
+$pdf->Open();
+$pdf->addPage();
+$pdf->setAutoPageBreak(false);
+$pdf->setFont('Arial','',12);
+$judul = "PT. Tikus Negeri";
+$judul2 = "Laporan Pengadaan Barang";
+$pdf->Cell(0,10,$judul,'0','1','C');
+$pdf->Cell(0,30,$judul2,'0','1','L');
+$row = 0;
+$yi = 50;
+$ya = 44;
+$pdf->setFont('Arial','',9);
+$pdf->setFillColor(222,222,222);
+$pdf->setXY(10,$ya);
+$pdf->CELL(6,6,'#',1,0,'C',1);
+$pdf->CELL(20,6,'No.',1,0,'C',1);
+$pdf->CELL(20,6,'Barang',1,0,'C',1);
+$pdf->CELL(20,6,'kode Barang',1,0,'C',1);
+$pdf->CELL(27,6,'Supplier',1,0,'C',1);
+$pdf->CELL(20,6,'petugas',1,0,'C',1);
+$pdf->CELL(20,6,'Jenis',1,0,'C',1);
+$pdf->CELL(20,6,'Tanggal',1,0,'C',1);
+$pdf->CELL(20,6,'Harga',1,0,'C',1);
+$pdf->CELL(20,6,'Jumlah',1,0,'C',1);
+$ya = $yi + $row;
+$sql = mysql_query("SELECT * FROM pengadaan INNER JOIN barang_detail ON pengadaan.id_barang=barang_detail.id_barang INNER JOIN suplier ON pengadaan.id_suplier=suplier.id_suplier INNER JOIN pegawai ON pengadaan.id_petugas=pegawai.id INNER JOIN jenis_brg ON barang_detail.id_jenis=jenis_brg.id_jenis ORDER BY pengadaan.tanggal DESC limit 0,35");
+$i = 1;
+$no = 1;
+$max = 31;
+$row = 6;
+while($data = mysql_fetch_array($sql)){
+$pdf->setXY(10,$ya);
+$pdf->setFont('arial','',9);
+$pdf->setFillColor(255,255,255);
+$pdf->cell(6,6,$no,1,0,'C',1);
+$pdf->CELL(20,6,$data['no_pengadaan'],1,0,'C',1);
+$pdf->CELL(20,6,$data['nama']." [".$data['merk_brg']."]",1,0,'C',1);
+$pdf->CELL(20,6,$data['kode_brg'],1,0,'C',1);
+$pdf->CELL(27,6,$data['nama_sup'],1,0,'C',1);
+$pdf->CELL(20,6,$data['nama_depan'],1,0,'C',1);
+$pdf->CELL(20,6,$data['jenis_pengadaan'],1,0,'C',1);
+$pdf->CELL(20,6,$data['tanggal'],1,0,'C',1);
+$pdf->CELL(20,6,$data['harga'],1,0,'C',1);
+$pdf->CELL(20,6,$data['jumlah'],1,0,'C',1);
+$ya = $ya+$row;
+$no++;
+$i++;
+}
+$oe = "Cimahi, ".$tgl;
+$eo = $nama." ".$b['nama_belakang'];
+$pdf->Cell(0,27,$oe,'0','1','R');
+$pdf->Cell(187,10,$eo,'10','1','R');
+$pdf->output();
+?>

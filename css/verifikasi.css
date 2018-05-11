@@ -1,0 +1,65 @@
+body{
+	margin:0;
+	padding: 0;
+}
+.form1{
+	text-align: center;
+	width: 30%;
+	padding: 30px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-top: 40px;
+	border:10px solid pink;
+	box-shadow: 10px 10px lightblue;
+}
+@font-face{
+	font-family: "paranoid";
+	src:url('../font/code bold.otf');
+}
+.form1 h1{
+	font-family: paranoid;
+	letter-spacing: 3px;
+	font-size: 40px;
+	color: lightblue;
+	text-shadow: 2px 2px 2px pink;
+}
+.form1 input[type='text']{
+	width: 70%;
+	padding: 9px;
+	font-family: calibri light;
+	color: grey;
+	outline-style: none;
+	border: 0;
+	border-bottom: 2px solid pink;
+	transition: 0.5s;
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+}
+.form1 input[type='text']:hover{
+	width: 80%;
+	transition: 0.5s;
+}
+.form1 input[type='submit']{
+	width: 100px;
+	padding: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	background-color: transparent;
+	border: 3px solid lightblue;
+	font-family: paranoid;
+	letter-spacing: 2px;
+	color: pink;
+	outline-style: none;
+	text-shadow: 1px 1px 1px lightblue;
+}
+.form1 input[type='submit']:hover{
+	border: 3px solid pink;
+	color: lightblue;
+}
+.form1 select{
+	width: 95%;
+	font-family: century gothic;
+	outline-style: none;
+}

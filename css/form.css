@@ -1,0 +1,186 @@
+.a{
+	background-color: #eee;
+}
+.form1 form{
+	margin-left: 2%;
+	margin-top: 10px;
+	float: left;
+	width: 90%;
+	padding-top: 10px;
+	padding-left: 20px;
+	background-color: white;
+	padding-bottom: 20px;
+}
+#form{
+	height: auto;
+}
+.form1 h1{
+	font-family: century gothic;
+}
+.form1 select {
+	width: 100%;
+	height: 50px;
+	outline-style: none;
+}
+.form1 input {
+	font-family: arial;
+	font-size: 15px;
+	width: 90%;
+	height: 35px;
+	padding: 10px;
+	background-color: transparent;
+	color: grey;
+	border:0;
+	border: 2px solid grey;
+	outline-style: none;
+	border-radius: 2%;
+}
+.form1 input[type=submit]{
+	font-family: paranoid;
+	color: #fff;;
+	width: 150px;
+	height: 50px;
+	border:2px solid grey;
+	border-radius: 2%;
+	font-size: 17px;
+	letter-spacing: 1px;
+	background-color: #78909C;;
+	opacity: 0.8;
+	margin-top: 20px;
+}
+.form1 input[type=submit]:hover{
+	color: #78909C;
+	background-color: #fff;
+}
+.form1 textarea {
+	font-family: century gothic;
+	width: 90%;
+	height: 80px;
+	padding: 10px;
+	margin-top:10px;
+	background-color: transparent;
+	border:0;
+	border: 2px solid grey;
+	border-radius: 2%;
+	outline-style: none;
+}
+.form1 a{
+	text-decoration: underline;
+	color: #4682b4;
+	font-family: century gothic;
+}
+.form1 select{
+	margin-top: 10px;
+	height: 30px;
+	background-color: transparent;
+	border:0;
+	border: 2px solid grey;
+	border-radius: 2%;
+}
+p{
+	font-size: 15px;
+	font-family: paranoid;
+	letter-spacing: 2px;
+	color: #78909C;
+	text-align: right;
+	margin-right: 15px;
+}
+#paris .form1{
+	width: 96%;
+	height: 90%;
+	float: left;
+	background-color: transparent;
+	padding: 0;
+}
+#paris h3, #London h3{
+	margin-bottom: 0;
+	text-align: left;
+	font-family: paranoid;
+	letter-spacing: 2px;
+	color: #78909C;
+}
+#paris table{
+	width: 80%;
+	float: left;
+	border: 0;
+	margin-left: 2%;
+	margin-top: 10px;
+}
+#paris td{
+	border:0;
+	padding: 3px;
+	margin-top: 15px;
+}
+#paris p, #london p{
+	font-size: 14px;
+	text-align: left;
+}
+#paris select{
+	width: 100%;
+	margin-top: 0;
+}
+#paris input{
+	width: 100%;
+	height: 30px;
+	margin-top: 0;
+}
+#paris input[type=number]{
+	width: 100%;
+	font-family: paranoid;
+	letter-spacing: 2px;
+	font-size: 14px;
+	height: 30px;
+	padding: 5px;
+}
+#paris input[type=submit]{
+	height: 50px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 2%;
+}
+.lok_form{
+	width: 50%;
+	height: 150px;
+	background-color: white;
+	padding: 2%;
+}
+.lok_form h1{
+	font-size: 23px;
+	font-family: paranoid;
+	text-align: left;
+	margin-top: 0.5%;
+	color: #78909C;
+	letter-spacing: 2px;
+}
+.lok_form select{
+	width: 60%;
+	padding: 5px;
+	outline-style: none;
+	float: left;
+	border: 2px solid grey;
+	color: grey;
+	margin-left: 15px;
+}
+.lok_form input[type=submit]{
+	font-family: paranoid;
+	color: #fff;;
+	width: 150px;
+	height: 50px;
+	border:2px solid grey;
+	border-radius: 2%;
+	font-size: 17px;
+	letter-spacing: 2px;
+	background-color: #78909C;;
+	opacity: 0.8;
+	margin-top: 10px;
+	float: left;
+	letter-spacing: 3px;
+	margin-left: 15px;
+}
+.tahap2 table{
+	width: 80%;
+	float: left;
+	border: 1;
+	margin-left: 2%;
+	margin-top: 10px;
+}
